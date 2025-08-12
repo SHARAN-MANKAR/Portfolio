@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sharan Basava — Portfolio</title>
+  <meta name="description" content="Professional portfolio — Sharan Basava Mankar" />
+  <style>
+    :root{
+      --bg:#121826; /* New deep blue background */
+      --card:#0f1b33;
+      --muted:#b0bcc9;
+      --accent:#06b6d4;
+      --accent-2:#f59e0b;
+      --highlight:#1e3a8a;
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#0d1525 120%);color:#e6eef3;line-height:1.45;padding:32px;}
+    .container{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:start}
+    main{background:var(--card);padding:28px;border-radius:var(--radius);box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+    aside{background:linear-gradient(135deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:22px;border-radius:12px;height:fit-content;display:flex;flex-direction:column;gap:12px}
+    header.profile{display:flex;gap:20px;align-items:center}
+    .avatar-placeholder{width:92px;height:92px;border-radius:12px;background:var(--glass);display:flex;align-items:center;justify-content:center;border:1px dashed rgba(255,255,255,0.04);color:var(--muted);font-size:12px}
+    h1{margin:0;font-size:26px}
+    .muted{color:var(--muted);font-size:14px}
+    section.about{margin-top:18px}
+    section.about p{margin-top:10px;color:#d7e6ef}
+    .projects{margin-top:18px;display:grid;gap:12px}
+    .project-card{padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.05);background:var(--glass);}
+    .project-card:nth-child(1){background:linear-gradient(90deg, rgba(6,182,212,0.15), rgba(255,255,255,0.05));}
+    .project-card:nth-child(2){background:linear-gradient(90deg, rgba(245,158,11,0.15), rgba(255,255,255,0.05));}
+    .project-card:nth-child(3){background:linear-gradient(90deg, rgba(16,185,129,0.15), rgba(255,255,255,0.05));}
+    .project-card:nth-child(4){background:linear-gradient(90deg, rgba(139,92,246,0.15), rgba(255,255,255,0.05));}
+    .project-card:nth-child(5){background:linear-gradient(90deg, rgba(236,72,153,0.15), rgba(255,255,255,0.05));}
+    .project-card h3{margin:0 0 8px 0}
+    .project-card p{margin:0;color:var(--muted);font-size:13px}
+    .project-links{margin-top:8px;display:flex;gap:8px}
+    .btn{padding:8px 10px;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#02131a;font-weight:600;text-decoration:none}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    .chip{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-size:12px;color:var(--muted);border:1px solid rgba(255,255,255,0.02)}
+    .contact a{display:block;margin-bottom:10px;color:var(--accent);text-decoration:none;font-weight:600}
+    .small-card{background:var(--glass);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+    .highlight-section{background:linear-gradient(90deg, var(--highlight), var(--accent));padding:20px;border-radius:var(--radius);box-shadow:0 0 25px rgba(30,58,138,0.5)}
+    .highlight-section h2{margin-top:0;color:#fff}
+    .highlight-section p{color:#fff}
+    footer{text-align:center;color:var(--muted);font-size:13px;margin-top:16px}
+    @media (max-width:980px){.container{grid-template-columns:1fr;}aside{order:2}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <main>
+      <header class="profile">
+        <div class="avatar-placeholder">Add photo later</div>
+        <div>
+          <h1>Sharan Basava Mankar</h1>
+          <div class="muted">Aspiring Software Engineer — Java & Web Development<br>B.Tech (CSE) — Malla Reddy Institute of Technology and Science</div>
+          <div class="chips">
+            <div class="chip">HTML</div>
+            <div class="chip">CSS</div>
+            <div class="chip">JavaScript</div>
+            <div class="chip">Java</div>
+            <div class="chip">OOPs</div>
+            <div class="chip">DSA</div>
+          </div>
+        </div>
+      </header>
+      <section class="about">
+        <h2>About</h2>
+        <p>Hello — I am Sharan, building strong fundamentals in Java and web development. I enjoy building practical apps that solve local problems. "Home Guru" is my personal project aimed at connecting parents with verified tutors who come to the student's home.</p>
+      </section>
+      <section class="projects">
+        <h2>Featured Projects</h2>
+        <article class="project-card"><h3>RTO Management System</h3><p>A Java-based system simulating vehicle registration, license workflows and search/validation modules. Built with OOP principles and file-based persistence.</p><div class="project-links"><a class="btn" href="https://github.com/mankarsharan/rto-management">View Repo</a></div></article>
+        <article class="project-card"><h3>Phishing Detection System</h3><p>Machine Learning project to detect phishing URLs and emails using feature extraction and classification models. Includes evaluation and a small web demo.</p><div class="project-links"><a class="btn" href="https://github.com/mankarsharan/phishing-detection">View Repo</a></div></article>
+        <article class="project-card"><h3>Banking System</h3><p>A full-featured Java banking app with account management, transactions and transaction history.</p></article>
+        <article class="project-card"><h3>E-Commerce Platform</h3><p>An end-to-end marketplace built with React frontend and Java backend. Implements product catalog, cart and order processing.</p></article>
+        <article class="project-card"><h3>Library Management System</h3><p>A Java desktop/web app to manage library inventory, lending and returns with role-based access.</p></article>
+      </section>
+      <footer>Updated: Aug 8, 2025</footer>
+    </main>
+    <aside>
+      <div class="small-card">
+        <h3>Contact</h3>
+        <a href="tel:+919397624324">+91 93976 24324</a>
+        <a href="mailto:mankar.sharan@gmail.com">mankar.sharan@gmail.com</a>
+        <a href="https://github.com/mankarsharan">GitHub</a>
+        <a href="https://linkedin.com/in/mankar-sharan">LinkedIn</a>
+      </div>
+      <div class="small-card">
+        <h3>Education</h3>
+        <p>B.Tech — Computer Science<br>Malla Reddy Institute of Technology and Science (2022 — 2026)</p>
+      </div>
+      <div class="small-card">
+        <h3>Achievements</h3>
+        <ul>
+          <li>2nd Place — CodeStorm 2023 (College Coding Contest)</li>
+          <li>Completed 30-day Java challenge on LeetCode</li>
+          <li>Certified: Java Programming and Software Engineering (Duke University, Coursera, 2024)</li>
+          <li>Git & GitHub Essentials (Udemy, 2024)</li>
+        </ul>
+      </div>
+      <div class="highlight-section">
+        <h2>Personal Project — Home Guru</h2>
+        <p>A mobile-first tutor-booking app where parents can book certified tutors to their doorstep. Includes scheduling, tutor profiles and secure payments (prototype).</p>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>
